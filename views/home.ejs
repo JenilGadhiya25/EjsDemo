@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #095772;
+      }
+      .box{
+        border-radius: 10px;
+        width: 200px;
+        height: 40px;
+        background-color: transparent;
+        margin-left: 300px;
+        border-color: aliceblue;
+      }
+      .btn2{
+        border-radius: 10px;
+        width: 100px;
+        height: 40px;
+        color: white;
+        border-color: lightslategray;
+      }
+      .btn2:hover{
+        background-color: #45cbe5;
+      }
+      header {
+        background-color: #095772;
+        border: none;
+        padding: 5px;
+      }
+      ul li {
+        display: flex;
+        display: inline;
+        margin: 5px;
+        padding: 6px;
+        
+      }
+      ul li a {
+        color: white;
+        text-decoration: none;
+         flex-direction: column;
+      }
+      ul li a:hover{
+        color: #45cbe5;
+      }
+      .jj {
+        background-size: cover;
+        width: 100%;
+        height: 490px;
+        margin-top: -9px;
+      }
+      .name {
+        margin-top: -400px;
+        color: white;
+        margin-left: 100px;
+      }
+      .name1 {
+        margin-left: 100px;
+        color: white;
+      }
+      .btn {
+        margin-left: 250px;
+        border-color: white;
+        color: white;
+        background-color: transparent;
+        width: 130px;
+        border-color: white;
+        border-radius: 10px;
+      }
+
+      .btn:hover {
+        background-color: #4ed6f5;
+      }
+      .card-group {
+        margin-top: 155px;
+      }
+      .card-body{
+        background-color: #095772;
+        border-radius: 50px;
+    
+      }
+      .card-img-top {
+        width: 100%;
+        height: 350px;
+        padding: 10px;
+        border-radius: 50px;
+        
+      }
+
+      .btn-effect-6 {
+        background: transparent;
+        width: 130px;
+        height: 30px;
+        border-radius: 10px;
+        border-color: aliceblue;
+        color: white;
+      }
+      .btn-effect-6:hover {
+        animation: shake 0.5s infinite;
+        background: #4ed6f5;
+      }
+
+        .btn-effect-7 { 
+         color: white;
+         border: 2px solid white;
+         width: 130px;
+         height: 40px; 
+         border-radius: 10px;
+         background-color: #095772;
+      }
+    .btn-effect-7:hover { 
+      animation: lightning 1.5s infinite; 
+    }
+
+
+      /* Animations */
+      @keyframes explode {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+        60% {
+          transform: scale(0.9);
+        }
+        100% {
+          transform: scale(1.1);
+        }
+      }
+
+      @keyframes shake {
+        0%,
+        100% {
+          transform: translateX(0);
+        }
+        25% {
+          transform: translateX(-5px) rotate(-5deg);
+        }
+        50% {
+          transform: translateX(5px) rotate(5deg);
+        }
+        75% {
+          transform: translateX(-5px) rotate(-5deg);
+        }
+      }
+
+      @keyframes lightning {
+        0%,
+        50%,
+        100% {
+          box-shadow: 0 0 5px #f1c40f;
+        }
+        25% {
+          box-shadow: 0 0 20px #f1c40f;
+        }
+        75% {
+          box-shadow: 0 0 30px #f1c40f, 0 0 50px #f1c40f;
+        }
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+          box-shadow: 0 0 0 0 rgba(155, 89, 182, 0.7);
+        }
+        70% {
+          transform: scale(1.05);
+          box-shadow: 0 0 0 15px rgba(155, 89, 182, 0);
+        }
+        100% {
+          transform: scale(1);
+          box-shadow: 0 0 0 0 rgba(155, 89, 182, 0);
+        }
+      }
+
+      @keyframes blur {
+        0% {
+          filter: blur(0);
+          transform: scale(1);
+        }
+        50% {
+          filter: blur(3px);
+          transform: scale(1.1);
+        }
+        100% {
+          filter: blur(0);
+          transform: scale(1.05);
+          background: #2ecc71;
+        }
+      }
+
+      @keyframes magnet {
+        0% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1.1) rotate(-2deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div>
+        <%- include('header'); %>
+        <img
+          src="https://t4.ftcdn.net/jpg/02/16/47/35/360_F_216473592_NefHePTpMfvYMNjD3UQTUVJy7DFPwqKA.jpg"
+          alt=""
+          class="jj px-4"
+        />
+
+        <h2 class="name">Get All Your Essentials .</h2>
+        <br />
+        <p class="name1">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Consequuntur,<br />
+          sed. Voluptatem animi rem consequuntur minus quam nam totam
+          veritatis<br />
+          voluptas a tempora minima recusandae, exercitationem quisquam ab aute.
+        </p>
+        <br />
+        <button class="btn">SHOP NOW</button>
+      </div><br>
+
+      <div class="card-group p-4">
+        <div class="card">
+          <img
+            src="https://5.imimg.com/data5/ANDROID/Default/2023/7/326598386/TM/JD/NK/189033354/product-jpeg-500x500.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title text-white">Labubu</h5>
+            <p class="card-text text-white"">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+            <button class="btn-effect-6">SHOP NOW</button>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://cdn.clippingpath.in/wp-content/uploads/2017/11/clipping_path_with_shadow_after_01.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title text-white"">Loveable Labubu</h5>
+            <p class="card-text text-white"">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+            <button class="btn-effect-6">SHOP NOW</button>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://glossier-prod.imgix.net/files/glossier-creamhoodie-carousel-01.png?auto=compress,format&cs=srgb&w=1374"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title text-white">Doll</h5>
+            <p class="card-text text-white">
+              This is a wider card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+            <button class="btn-effect-6">SHOP NOW</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
